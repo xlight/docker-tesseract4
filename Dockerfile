@@ -5,7 +5,7 @@ RUN curl http://www.leptonica.org/source/leptonica-1.74.1.tar.gz -o leptonica-1.
 tar -zxvf leptonica-1.74.1.tar.gz && \
 cd leptonica-1.74.1 && ./configure && make && make install && \
 cd .. && rm -rf leptonica*
-RUN git clone --depth 1 https://github.com/tesseract-ocr/tesseract.git && \
+RUN git clone --depth 1 https://github.com/xlight/tesseract.git && \
 cd tesseract && \
 ./autogen.sh && \
 ./configure --enable-debug && \
