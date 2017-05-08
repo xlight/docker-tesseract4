@@ -8,7 +8,7 @@ cd .. && rm -rf leptonica*
 RUN git clone --depth 1 https://github.com/tesseract-ocr/tesseract.git && \
 cd tesseract && \
 ./autogen.sh && \
-./configure --enable-debug && \
+./configure && \
 LDFLAGS="-L/usr/local/lib" CFLAGS="-I/usr/local/include" make && \
 make install && \
 ldconfig && \
